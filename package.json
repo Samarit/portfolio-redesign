@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-redesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js ",
+    "client": "npm run start  --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "react"
+  ],
+  "author": "Aleksey Kislyak <kislyakaleksey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
