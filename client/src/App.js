@@ -1,11 +1,15 @@
-import './App.css';
-import { Home } from './pages/Home';
+import  './main.sass';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useRoutes } from './routes';
 
 function App() {
+  const routes = useRoutes()
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="container">
+        {routes}
+      </div>
+    </Router>
   );
 }
 
