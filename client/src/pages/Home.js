@@ -1,14 +1,12 @@
 import React from 'react'
 import {BrowserRouter as Router } from 'react-router-dom'
-import Navbar from '../components/Navbar'
 
 function Home() {
   return(
     <Router>
-      <div>
-        <h1>I'm Aleksey</h1>
+      <div id="home">
+        <h1>HI, I'M ALEKSEY <br /> FRONTEND DEVELOPER</h1>
       </div>
-      <Navbar />
     </Router>
   )
 }
