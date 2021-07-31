@@ -5,8 +5,6 @@ import MainBtn from "./MainBtn"
 function Navbar() {
   const location = useLocation()
 
-  console.log(location)
-
   if (location.pathname !== '/') return <MainBtn />
 
   return (

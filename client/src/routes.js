@@ -9,16 +9,16 @@ export const useRoutes = () => {
     return (
         <Switch>
             <Route path="/" exact>
-                <Home />
+              <Home />
             </Route>
-            <Route path="/skills">
-                <Skills />
+            <Route path="/skills" exact>
+              <Skills />
             </Route>
-            <Route path="/works">
-                <Works />
+            <Route path="/works" exact>
+              <Works />
             </Route>
-            <Route path="/contacts">
-                <Contacts />
+            <Route path="/contacts" exact>
+              <Contacts />
             </Route>
             <Redirect to="/" />
         </Switch>
